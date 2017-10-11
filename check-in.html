@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbershop</title>
+    <!-- build:css css/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/normalize-css/normalize.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css css/main.css -->
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/check-in.css">
+    <!-- endbuild -->
+</head>
+<body>
+<div class="section section_color_black navigation">
+    <div class="section__inner">
+        <div class="menu__button">
+            <div class="menu__button-helper"></div>
+        </div>
+        <nav class="menu__wrapper">
+            <ul class="menu navigation-menu">
+                <li class="menu__items menu__items_active">
+                    <a href="index.html" class="menu__link">Главная</a>
+                </li>
+                <li class="menu__items">
+                    <a class="menu__link">Наши работы</a>
+                </li>
+                <li class="menu__items">
+                    <a href="check-in.html" class="menu__link">Записаться</a>
+                </li>
+                <li class="menu__items">
+                    <a class="menu__link">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="navigation__logo"></div>
+    <div class="menu__title">Записаться</div>
+</div>
+<main class="main">
+    <form class="main__form form" name="check-in" action="#" method="post">
+        <div class="section">
+            <div class="section__inner main__contacts contacts">
+                <div class="contacts__head">
+                    <div class="contacts__title">Запись на стрижку</div>
+                    <button class="contacts__button">На главную</button>
+                </div>
+                <div class="contacts__data">
+                    <input type="text" class="contacts__data-input contacts__data-input_type_name" placeholder="Имя" required >
+                    <input type="text" class="contacts__data-input contacts__data-input_type_name" placeholder="Фамилия" required >
+                    <input type="text" class="contacts__data-input contacts__data-input_type_name" placeholder="Отчество" required >
+                    <input type="tel" class="contacts__data-input contacts__data-input_type_link" placeholder="Контактный телефон" required >
+                    <input type="email" class="contacts__data-input contacts__data-input_type_link" placeholder="Контактный e-mail" required >
+                    <textarea class="contacts__data-textarea" placeholder="Доп. информация для мастера"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="section__inner main__model model">
+                <div class="model__head">
+                    <div class="form__line model__head-line"></div>
+                    <div class="form__title model__head-title">Выберите модель бороды:</div>
+                </div>
+                <div class="model__items">
+                    <div class="model__column">
+                        <input type="radio" class="model__column-radio" name="model__radio">
+                        <div class="model__column-check"></div>
+                        <div class="model__column-text">адмирал</div>
+                        <img class="model__column-img" src="img/beard-1.png">
+                    </div>
+                    <div class="model__column">
+                        <input type="radio" class="model__column-radio" name="model__radio">
+                        <div class="model__column-check"></div>
+                        <div class="model__column-text">лесоруб</div>
+                        <img class="model__column-img" src="img/beard-2.png">
+                    </div>
+                    <div class="model__column">
+                        <input type="radio" class="model__column-radio" name="model__radio">
+                        <div class="model__column-check"></div>
+                        <div class="model__column-text">полярник</div>
+                        <img class="model__column-img" src="img/beard-3.png">
+                    </div>
+                    <div class="model__column">
+                        <input type="radio" class="model__column-radio" name="model__radio">
+                        <div class="model__column-check"></div>
+                        <div class="model__column-text">боярин</div>
+                        <img class="model__column-img" src="img/beard-4.png">
+                    </div>
+                    <div class="model__column">
+                        <input type="radio" class="model__column-radio" name="model__radio">
+                        <div class="model__column-check"></div>
+                        <div class="model__column-text">мудрец</div>
+                        <img class="model__column-img" src="img/beard-5.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="section__inner main__service service">
+                <div class="service__head">
+                    <div class="form__line service__head-line"></div>
+                    <div class="form__title service__head-title">Дополнительные услуги:</div>
+                </div>
+                <div class="service__items">
+                    <div class="service__additions">
+                        <input type="checkbox" id="checkbox-1" class="service__additions-checkbox">
+                        <label for="checkbox-1" class="service__additions-label">Подкрасить бороду</label>
+                    </div>
+                    <div class="service__additions">
+                        <input type="checkbox" id="checkbox-2" class="service__additions-checkbox">
+                        <label for="checkbox-2" class="service__additions-label">Подкрасить бороду</label>
+                    </div>
+                    <div class="service__additions">
+                        <input type="checkbox" id="checkbox-3" class="service__additions-checkbox">
+                        <label for="checkbox-3" class="service__additions-label">Подкрасить бороду</label>
+                    </div>
+                    <div class="service__additions">
+                        <input type="checkbox" id="checkbox-4" class="service__additions-checkbox">
+                        <label for="checkbox-4" class="service__additions-label">Подкрасить бороду</label>
+                    </div>
+                    <div class="service__additions">
+                        <input type="checkbox" id="checkbox-5" class="service__additions-checkbox">
+                        <label for="checkbox-5" class="service__additions-label">Подкрасить бороду</label>
+                    </div>
+                    <div class="service__additions">
+                        <input type="checkbox" id="checkbox-6" class="service__additions-checkbox">
+                        <label for="checkbox-6" class="service__additions-label">Подкрасить бороду</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="section__inner main__submit submit">
+                <input type="submit" class="submit-button" value="Отправить заявку">
+            </div>
+        </div>
+    </form>
+</main>
+<div class="section section_color_grey">
+    <footer class="section__inner footer">
+        <div class="footer__content footer-content">
+            <div class="footer-content__address address">
+                <div class="address__title">Барбершоп Бородинский</div>
+                <div class="address__paragraph">г. Санкт-Петербург, ул. Большая Конюшенная 19/8</div>
+                <div class="address__telephone">+7 (812) 555-66-66</div>
+            </div>
+            <div class="footer-content__communication communication">
+                <div class="communication__title">Давайте дружить!</div>
+                <div class="communication__icons">
+                    <a href="https://vk.com/forever_alone_every_time" class="communication__icon communication__icon_vk"></a>
+                    <a href="" class="communication__icon communication__icon_inst"></a>
+                    <a href="" class="communication__icon communication__icon_face"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<!-- build:js js/vendor.js -->
+<!-- bower:js -->
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+<!-- build:js js/main.js -->
+<script src="js/main.js"></script>
+<!-- endbuild -->
+</body>
+</html>
